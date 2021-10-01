@@ -5,6 +5,7 @@ const app = express();
 const router = express.Router();
 
 // imports
+require('encoding')
 const fetch = require('cross-fetch');
 // routes
 
@@ -34,12 +35,6 @@ async function recData()
 app.use(`/.netlify/functions/api`, router);
 
 module.exports = app;
-module.exports = {
-  app,
-  externals: {
-    'cross-fetch': 'commonjs2 cross-fetch',
-  }
-};
 module.exports.handler = serverless(app);
 // npm install express netlify-lambda serverless-http 
 // http://localhost:9000/.netlify/functions/api
