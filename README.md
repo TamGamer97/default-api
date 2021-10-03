@@ -1,3 +1,1 @@
 ﻿# default-api
-
-Javasciprt api
