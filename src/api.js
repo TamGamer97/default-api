@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 
 // functions
 
-async function recData()
+async function recData(abc)
 {
     let data;
     await fetch('https://api-setup-js.netlify.app./.netlify/functions/api')
@@ -39,6 +39,7 @@ module.exports = app;
 module.exports.handler = serverless(app);
 
 // startup
+// hello from oneline vs code - codespaces
 
 // npm install express netlify-lambda serverless-http encoding
 // http://localhost:9000/.netlify/functions/api - /routename
