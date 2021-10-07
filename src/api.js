@@ -43,3 +43,4 @@ module.exports.handler = serverless(app);
 
 // npm install express netlify-lambda serverless-http encoding
 // http://localhost:9000/.netlify/functions/api - /routename
+// editing in vscode pc - vscode remote extention
